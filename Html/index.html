@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>COMZAI Inventory System</title>
+    <link rel="icon" href="../Images/COMZAI%20Futuristic%20Emblem.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="../Css/styles.css" />
+  </head>
+  <body>
+    <section id="login">
+      <div class="hero">
+        <div class="brand">
+          <img
+            class="logo"
+            src="../Images/COMZAI%20Futuristic%20Emblem.png"
+            alt="COMZAI"
+          />
+        </div>
+        <div>
+          <h1>Find any product, price and stock count in seconds.</h1>
+          <p class="hero-description">
+            One shared record of the store’s computer products, kept up to date
+            by the admin and searchable by every employee.
+          </p>
+        </div>
+        <div class="chip-art">
+          <span>⌨️</span><span>🖱</span><span>🎧</span><span>🔊</span
+          ><span>💾</span>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="form">
+          <h2>Sign in</h2>
+          <label for="u">Username</label
+          ><input id="u" autocomplete="username" />
+          <label for="p">Password</label>
+          <div class="pw">
+            <input
+              id="p"
+              type="password"
+              autocomplete="current-password"
+            /><button type="button" id="eye" aria-label="Show password">
+              Show
+            </button>
+          </div>
+          <div class="err" id="lerr" role="alert"></div>
+          <button class="btn full" id="go">Sign in</button>
+          <div class="hint">
+            Demo accounts: <b>admin</b> / admin123 &nbsp;·&nbsp;
+            <b>employee</b> / employee123
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="app" class="hidden">
+      <nav id="nav">
+        <button class="brand" data-go="home">
+          <img
+            class="logo"
+            src="../Images/COMZAI%20Futuristic%20Emblem.png"
+            alt="COMZAI"
+          /><span class="n">Inventory System</span>
+        </button>
+        <div class="links">
+          <button data-go="home">Home</button
+          ><button data-go="inv">Inventory</button
+          ><button data-go="search">Search</button>
+          <span class="who" id="who"></span><button id="out">Log out</button>
+        </div>
+      </nav>
+      <main id="view"></main>
+    </div>
+
+    <script src="../Script/app.js"></script>
+  </body>
+</html>
